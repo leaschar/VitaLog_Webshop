@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Barrierefreiheitserklärung der VitaLog Pro Website – WCAG 2.2 AA Konformität.">
+  <title>Barrierefreiheit – VitaLog Pro | VitaForge OG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+    <header class="page-header">
+      <div class="container">
+        <h1>Barrierefreiheitserklärung</h1>
+        <p>Gemäß Web Accessibility Directive (WAD) &amp; WCAG 2.2 Level AA | Stand: Mai 2024</p>
+      </div>
+    </header>
+
+    <section class="prose-section">
+      <div class="container">
+        <div class="prose-wrap">
+
+          <div class="alert-box">
+            VitaForge OG ist bestrebt, seine Website und App für alle Menschen zugänglich zu gestalten,
+            unabhängig von Behinderung oder verwendeter Technologie.
+          </div>
+
+          <h2>1. Stand der Vereinbarkeit</h2>
+          <p>
+            Diese Website ist mit den <strong>Web Content Accessibility Guidelines (WCAG) 2.2,
+            Konformitätsstufe AA</strong> <em>weitgehend vereinbar</em>.
+            Die nachfolgend aufgeführten Maßnahmen wurden umgesetzt; bekannte Ausnahmen sind
+            dokumentiert.
+          </p>
+
+          <h2>2. Umgesetzte Barrierefreiheits-Maßnahmen</h2>
+
+          <h3>Wahrnehmbarkeit (Perceivable)</h3>
+          <ul>
+            <li>Alle bedeutsamen Bilder und Icons haben Alternativtexte (<code>alt</code>-Attribute) oder
+              sind als dekorativ ausgezeichnet (<code>aria-hidden="true"</code>).</li>
+            <li>Farbkontrastverhältnis von mindestens <strong>4,5:1</strong> für normalen Text und
+              <strong>3:1</strong> für großen Text (geprüft mit dem WCAG Contrast Checker).</li>
+            <li>Inhalte sind nicht allein durch Farbe unterschieden.</li>
+            <li>Texte lassen sich auf 200 % vergrößern, ohne dass Inhalte verdeckt werden.</li>
+            <li>Kein Inhalt blinkt öfter als 3 Mal pro Sekunde.</li>
+          </ul>
+
+          <h3>Bedienbarkeit (Operable)</h3>
+          <ul>
+            <li>Alle interaktiven Elemente sind per Tastatur erreichbar und bedienbar (Tab, Enter, Space, Escape).</li>
+            <li>Ein <strong>Skip-Link</strong> ermöglicht das direkte Springen zum Hauptinhalt (<kbd>Tab</kbd>
+              beim Seitenaufruf).</li>
+            <li>Fokusindikatoren sind deutlich sichtbar (3 px grüner Outline-Ring).</li>
+            <li>Navigation ist konsistent auf allen Seiten.</li>
+            <li>Zeitlimits: Diese Website hat keine serverseitigen Zeitlimits für Benutzerinteraktionen.</li>
+            <li>Kein automatisch abspielendes Audio oder Video mit Ton.</li>
+          </ul>
+
+          <h3>Verständlichkeit (Understandable)</h3>
+          <ul>
+            <li>Seitensprache ist korrekt als <code>lang="de"</code> deklariert.</li>
+            <li>Pflichtfelder in Formularen sind mit <code>required</code> und visuell markiert.</li>
+            <li>Fehlermeldungen beschreiben das Problem und bieten Lösungsvorschläge.</li>
+            <li>Abkürzungen werden beim ersten Vorkommen ausgeschrieben.</li>
+            <li>Lesesprache ist einfach und klar (Zielgruppe: allgemeine Bevölkerung).</li>
+          </ul>
+
+          <h3>Robustheit (Robust)</h3>
+          <ul>
+            <li>HTML ist valide und semantisch korrekt strukturiert (<code>&lt;main&gt;</code>,
+              <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, etc.).</li>
+            <li>ARIA-Attribute werden korrekt und sparsam eingesetzt.</li>
+            <li>Kompatibel mit gängigen Screenreadern (NVDA, JAWS, VoiceOver – getestet).</li>
+            <li>Funktioniert ohne JavaScript (grundlegende Inhalte zugänglich).</li>
+            <li>Unterstützt <code>prefers-reduced-motion</code> (Animationen deaktiviert bei Einstellung).</li>
+          </ul>
+
+          <h2>3. Nicht vollständig barrierefreie Inhalte &amp; Ausnahmen</h2>
+          <p>Folgende Punkte sind bekannte Einschränkungen (mit geplantem Lösungsdatum):</p>
+          <ul>
+            <li>
+              <strong>Dashboard-Mockup in der Hero-Section:</strong> Das animierte Kalorie-Dashboard
+              (dekoratives SVG) enthält Echtzeitdaten ohne Textäquivalent. Status: Wird bis Q3 2024
+              mit einer Textzusammenfassung ergänzt. <em>Ausnahme: dekorativer Inhalt</em>
+            </li>
+            <li>
+              <strong>Externe Links:</strong> Externe Links öffnen nicht automatisch in einem neuen
+              Tab; Nutzer werden nicht explizit darauf hingewiesen. Geplante Lösung: Q4 2024.
+            </li>
+          </ul>
+
+          <h2>4. Technologien zur Barrierefreiheit</h2>
+          <p>Diese Website verlässt sich auf folgende Technologien für die Zugänglichkeit:</p>
+          <ul>
+            <li>HTML5 (semantische Elemente)</li>
+            <li>CSS3 (inkl. <code>prefers-reduced-motion</code>)</li>
+            <li>WAI-ARIA 1.2 (ergänzende Rollen und Eigenschaften)</li>
+            <li>JavaScript (progressive Enhancement – Inhalte auch ohne JS zugänglich)</li>
+          </ul>
+
+          <h2>5. Prüfmethoden</h2>
+          <p>Die Barrierefreiheit dieser Website wurde mit folgenden Methoden bewertet:</p>
+          <ul>
+            <li>Automatisierte Tests: WAVE Web Accessibility Evaluation Tool, axe DevTools</li>
+            <li>Manuelle Tastaturnavigation (Firefox, Chrome)</li>
+            <li>Screenreader-Test: NVDA + Firefox (Windows), VoiceOver + Safari (macOS)</li>
+            <li>Farbkontrastprüfung: WebAIM Contrast Checker, Colour Contrast Analyser</li>
+            <li>Zoom-Test: 200 % / 400 % Vergrößerung im Browser</li>
+          </ul>
+
+          <h2>6. Feedback &amp; Kontakt</h2>
+          <p>
+            Wenn Sie Barrieren auf unserer Website feststellen oder Unterstützung benötigen,
+            kontaktieren Sie uns bitte:
+          </p>
+          <ul>
+            <li>E-Mail: <a href="mailto:a11y@vitaforge.at">a11y@vitaforge.at</a></li>
+            <li>Telefon: +43 1 234 5678 (Mo–Fr, 9–17 Uhr)</li>
+            <li>Über das <a href="kontakt.html">Kontaktformular</a></li>
+          </ul>
+          <p>
+            Wir bemühen uns, Anfragen innerhalb von <strong>5 Werktagen</strong> zu beantworten
+            und festgestellte Barrieren zeitnah zu beheben.
+          </p>
+
+          <h2>7. Durchsetzungsverfahren</h2>
+          <p>
+            Sollten wir Ihrem Feedback nicht ausreichend Abhilfe leisten, können Sie sich an die
+            zuständige Schlichtungsstelle wenden:
+          </p>
+          <p>
+            <strong>Österreichische Datenschutzbehörde / Monitoringstelle</strong><br>
+            Barichgasse 40-42, 1030 Wien<br>
+            <a href="https://www.digitalaustria.gv.at" rel="noopener">digitalaustria.gv.at</a>
+          </p>
+
+          <p style="margin-top:2rem;font-size:.85rem;color:var(--clr-muted);">
+            Stand dieser Erklärung: Mai 2024 | Erstellt durch: VitaForge OG Design &amp; Dev Team
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="cookie-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script>
+    document.getElementById('nav-placeholder').innerHTML = VL.nav('a11y');
+    document.getElementById('footer-placeholder').innerHTML = VL.footer();
+    document.getElementById('cookie-placeholder').innerHTML = VL.cookie();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

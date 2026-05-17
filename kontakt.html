@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktieren Sie VitaForge OG – Impressum, Kontaktformular und Unternehmensinformationen.">
+  <title>Kontakt &amp; Impressum – VitaForge OG | VitaLog Pro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+    <header class="page-header">
+      <div class="container">
+        <h1>Kontakt</h1>
+        <p>Wir sind für Sie da – Mo bis Fr, 9 bis 17 Uhr</p>
+      </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title visually-hidden" id="contact-heading">Kontaktmöglichkeiten</h2>
+        </div>
+        <div class="contact-grid">
+          <!-- Info blocks -->
+          <div class="contact-info">
+            <div class="contact-block">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div>
+                <h3>Adresse</h3>
+                <address style="font-style:normal;">
+                  VitaForge OG<br>
+                  Mariahilfer Straße 88/12<br>
+                  1060 Wien, Österreich
+                </address>
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-icon" aria-hidden="true">📧</div>
+              <div>
+                <h3>E-Mail</h3>
+                <p><a href="mailto:info@vitaforge.at">info@vitaforge.at</a> (Allgemein)</p>
+                <p><a href="mailto:support@vitaforge.at">support@vitaforge.at</a> (Support)</p>
+                <p><a href="mailto:datenschutz@vitaforge.at">datenschutz@vitaforge.at</a> (Datenschutz)</p>
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div>
+                <h3>Telefon</h3>
+                <p><a href="tel:+4312345678">+43 1 234 5678</a></p>
+                <p style="font-size:.82rem;color:var(--clr-muted);">Mo–Fr, 9:00–17:00 Uhr MEZ</p>
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-icon" aria-hidden="true">⏱️</div>
+              <div>
+                <h3>Reaktionszeiten</h3>
+                <p>Free: bis 5 Werktage</p>
+                <p>Pro: bis 2 Werktage</p>
+                <p>Business: bis 24 Stunden (per SLA)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <h2 style="font-size:1.3rem;margin-bottom:1.5rem;color:var(--clr-primary-d);">Schreiben Sie uns</h2>
+
+            <div class="toast" id="form-toast" role="alert" aria-live="polite" tabindex="-1">
+              ✅ Danke für Ihre Nachricht! Wir melden uns bald bei Ihnen.
+            </div>
+
+            <form id="contact-form" novalidate aria-label="Kontaktformular">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                <div class="form-group">
+                  <label for="cf-name">Vorname <span class="required-mark" aria-label="Pflichtfeld">*</span></label>
+                  <input type="text" id="cf-name" name="name" autocomplete="given-name" required placeholder="Max" aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label for="cf-lastname">Nachname <span class="required-mark" aria-label="Pflichtfeld">*</span></label>
+                  <input type="text" id="cf-lastname" name="lastname" autocomplete="family-name" required placeholder="Mustermann" aria-required="true">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">E-Mail-Adresse <span class="required-mark" aria-label="Pflichtfeld">*</span></label>
+                <input type="email" id="cf-email" name="email" autocomplete="email" required placeholder="max@beispiel.at" aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="cf-subject">Betreff <span class="required-mark" aria-label="Pflichtfeld">*</span></label>
+                <select id="cf-subject" name="subject" required aria-required="true">
+                  <option value="">Bitte wählen…</option>
+                  <option value="support">Technischer Support</option>
+                  <option value="billing">Abrechnung &amp; Zahlung</option>
+                  <option value="datenschutz">Datenschutz-Anfrage</option>
+                  <option value="business">Business-Anfrage</option>
+                  <option value="sonstiges">Sonstiges</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cf-message">Nachricht <span class="required-mark" aria-label="Pflichtfeld">*</span></label>
+                <textarea id="cf-message" name="message" required aria-required="true" placeholder="Beschreiben Sie Ihr Anliegen…"></textarea>
+              </div>
+              <label class="checkbox-label" style="margin-bottom:1.5rem;">
+                <input type="checkbox" id="cf-datenschutz" name="datenschutz" required aria-required="true">
+                <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der
+                  Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage einverstanden. <span class="required-mark" aria-hidden="true">*</span></span>
+              </label>
+              <button type="submit" class="btn btn-primary">
+                Nachricht senden
+              </button>
+              <p class="form-hint" style="margin-top:.8rem;">
+                <span aria-hidden="true">*</span> Pflichtfelder. Dieses Formular ist zu Demo-Zwecken – keine echte E-Mail-Übertragung.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPRESSUM (Aufgabe 6 / § 24 Mediengesetz) -->
+    <section id="impressum" aria-labelledby="impressum-heading" style="background:var(--clr-accent2);">
+      <div class="container">
+        <div class="prose-wrap">
+          <span class="section-label">§ 24 Mediengesetz / ECG</span>
+          <h2 class="section-title" id="impressum-heading">Impressum</h2>
+
+          <p style="color:var(--clr-muted);margin-bottom:2rem;">
+            Angaben gemäß § 24 Mediengesetz (MedienG) und § 5 E-Commerce-Gesetz (ECG) sowie
+            § 63 Gewerbeordnung (GewO).
+          </p>
+
+          <div style="background:var(--clr-surface);border:1px solid var(--clr-border);border-radius:var(--radius-md);padding:2rem;">
+            <h3>Medieninhaber &amp; Herausgeber</h3>
+            <address style="font-style:normal;color:var(--clr-muted);line-height:2;">
+              <strong style="color:var(--clr-text);">VitaForge OG</strong><br>
+              Mariahilfer Straße 88/12<br>
+              1060 Wien<br>
+              Österreich<br><br>
+              <strong>Rechtsform:</strong> Offene Gesellschaft (OG) nach österreichischem Recht<br>
+              <strong>Firmenbuchnummer:</strong> FN 123456 a<br>
+              <strong>Firmenbuchgericht:</strong> Handelsgericht Wien<br>
+              <strong>UID-Nummer:</strong> ATU12345678<br>
+              <strong>EORI-Nummer:</strong> ATEOS1000012345 (für grenzüberschreitenden Handel)<br><br>
+              <strong>Gesellschafter:</strong> Lukas Weber, Sara Müller (je 50 %)<br><br>
+              <strong>Telefon:</strong> <a href="tel:+4312345678">+43 1 234 5678</a><br>
+              <strong>E-Mail:</strong> <a href="mailto:info@vitaforge.at">info@vitaforge.at</a><br>
+              <strong>Website:</strong> <a href="https://vitaforge.github.io/vitalog/">vitaforge.github.io/vitalog</a>
+            </address>
+
+            <hr style="border:none;border-top:1px solid var(--clr-border);margin:1.5rem 0;">
+
+            <h3>Unternehmensgegenstand</h3>
+            <p style="color:var(--clr-muted);">
+              Entwicklung und Vertrieb von Softwareprodukten; insbesondere KI-gestützte
+              Ernährungs- und Fitness-Apps (SaaS-Modell). Gewerbeberechtigung:
+              Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik
+              (freies Gewerbe gem. § 5 GewO 1994).
+            </p>
+
+            <hr style="border:none;border-top:1px solid var(--clr-border);margin:1.5rem 0;">
+
+            <h3>Wirtschaftskammer</h3>
+            <p style="color:var(--clr-muted);">
+              Mitglied der <strong>Wirtschaftskammer Wien</strong> (WKW),
+              Fachgruppe UBIT (Unternehmensberatung, Buchhaltung und Informationstechnologie)
+            </p>
+
+            <hr style="border:none;border-top:1px solid var(--clr-border);margin:1.5rem 0;">
+
+            <h3>Aufsichtsbehörde</h3>
+            <p style="color:var(--clr-muted);">
+              Magistrat der Stadt Wien – Magistratisches Bezirksamt für den 6./7. Bezirk<br>
+              Anwendbare Rechtsvorschriften: GewO 1994, ECG, DSGVO, UrhG
+            </p>
+
+            <hr style="border:none;border-top:1px solid var(--clr-border);margin:1.5rem 0;">
+
+            <h3>Haftungsausschluss / Disclaimer</h3>
+            <p style="color:var(--clr-muted);">
+              Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die
+              Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich
+              deren Betreiber verantwortlich. VitaLog Pro ist keine medizinische Anwendung und
+              kein zertifiziertes Medizinprodukt gemäß MDR 2017/745.
+            </p>
+
+            <hr style="border:none;border-top:1px solid var(--clr-border);margin:1.5rem 0;">
+
+            <h3>Urheberrecht</h3>
+            <p style="color:var(--clr-muted);">
+              Alle auf dieser Website veröffentlichten Inhalte (Texte, Grafiken, Logos, Quellcode)
+              sind urheberrechtlich geschützt. © 2024 VitaForge OG. Alle Rechte vorbehalten.
+              Verwendete Drittmedien sind in unserer
+              <a href="about.html#media-heading">Medienübersicht</a> dokumentiert.
+            </p>
+
+            <hr style="border:none;border-top:1px solid var(--clr-border);margin:1.5rem 0;">
+
+            <h3>Online-Streitbeilegung (ODR)</h3>
+            <p style="color:var(--clr-muted);">
+              Gemäß § 19 AStG verweisen wir auf die Online-Streitbeilegungsplattform der EU-Kommission:
+              <a href="https://ec.europa.eu/consumers/odr" rel="noopener">ec.europa.eu/consumers/odr</a>.
+              Unsere E-Mail-Adresse: <a href="mailto:info@vitaforge.at">info@vitaforge.at</a>.
+              Wir sind nicht bereit und nicht verpflichtet, an einem Streitbeilegungsverfahren vor
+              einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="cookie-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script>
+    document.getElementById('nav-placeholder').innerHTML = VL.nav('kontakt');
+    document.getElementById('footer-placeholder').innerHTML = VL.footer();
+    document.getElementById('cookie-placeholder').innerHTML = VL.cookie();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
